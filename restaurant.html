@@ -548,7 +548,12 @@
             #heading { top: 20px; margin-bottom: 30px; }
             .varities { flex-direction: column; width: 100%; left: 0; height: auto; gap: 50px; }
             .Breakfast, .Appetizers, .Desserts { width: 80%; height: auto; margin: 0 auto; padding-top: 150px; padding-bottom: 20px; }
-            .varities img { top: 0; position: absolute; }
+         .varities img { 
+        position: static; /* Remove absolute positioning */
+        margin: 10 auto 30px auto; /* Add spacing below images */
+        display: block; /* Center horizontally */
+        top: auto; /* Remove any top offset */
+    }
             .varities h1, .varities p, .varities a { position: static; margin-top: 10px; }
             .menu { height: auto; padding-top: 20px; }
             .food-and-description { flex-direction: column; height: auto; }
@@ -565,7 +570,7 @@
             .offers-content p { position: static; top: auto; margin: 10px 20px; text-align: center; }
             .offers-content button { position: static; top: auto; right: auto; margin: 20px auto; }
             .offers-img img { position: static; width: 80%; height: auto; margin: 20px auto; }
-            .offer-tag { position: absolute; top: 50px; right: 50px; padding: 15px; }
+            .offer-tag { position: absolute; top: 380px; right: 10px; padding: 15px; }
             .offer-tag span { font-size: 20px; }
             .download { flex-direction: column-reverse; height: auto; padding-bottom: 50px; }
             .download-img-section { height: 30vh; width: 100%; background-color: #f0f0f0; }
